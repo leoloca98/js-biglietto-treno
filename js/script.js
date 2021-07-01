@@ -34,6 +34,8 @@ if (userAge < 18) {
     // Se over 65
 } else if (userAge >= 65) {
     discountedPrice = initialPrice - (initialPrice * 0.4);
+} else if (userAge >= 18 && userAge < 65) {
+    discountedPrice = initialPrice;
 }
 
 discountedPrice = discountedPrice.toFixed(2);
