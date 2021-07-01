@@ -36,6 +36,8 @@ if (userAge < 18) {
     discountedPrice = initialPrice - (initialPrice * 0.4);
 }
 
+discountedPrice = discountedPrice.toFixed(2);
+
 finalPrice = document.getElementById("price");
 finalPrice.innerText = discountedPrice;
 console.log(discountedPrice);
